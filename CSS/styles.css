@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;700&family=Quicksand:wght@500;700&family=Tilt+Neon&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 100px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+h2, h3{
+    color: #E12D10;
+}
+
+header.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    background-color: #FA6509;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+    
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: black;
+    color: white;
+}
+
+footer{
+    padding: 10px;
+    max-width: 1;
+    color: white;
+    background-color: #FA6509;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile header{
+    text-align: center;
+}
+
+.featured-image{
+    width: 15%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img{
+    width: 200px;
+}
+
+.card{
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#content{
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+   
+main .social-media li {
+    list-style-type: none;
+    display: inline;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+main .social-media li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+   
+main .social-media li a:hover {
+    background-color: #FA6509;
+    color: white;
+}
+
+aside{
+    flex: 1;
+}
+
+aside h3{
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    main{
+        flex-flow: column nowrap;
+    }
+
+    main aside{
+        align-self: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul{
+        justify-content: center;
+    }
+
+    main aside{
+        align-self: stretch;
+    }
+}
+
+header{
+    display: inline;
+}
